@@ -1,0 +1,111 @@
+.LastPage{
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 6rem;
+    background: #fff;
+}
+.LastPage div:nth-child(1){
+    width: 30%;
+    height: 400px;
+}
+.LastPage div:nth-child(1) h1{
+    font-size: 2.3rem;
+}
+.LastPage div:nth-child(1) p{
+    padding: 2.3rem 0rem;
+    font-size: 1.3rem;
+}
+.LastPage div:nth-child(1) button{
+    border: none;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: .8rem 1.5rem;
+    background: #cfa1a8;
+}
+
+.LastPage div:nth-child(2){
+    width: 700px;
+    height: 500px;
+    border-radius: .5rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/src/images/pic5.jpg);
+}
+
+/*         Responsive Design           */
+@media (width <= 1280px) {
+    .LastPage{
+        padding: 3.5rem 5rem;
+    }
+    .LastPage div:nth-child(1){
+        padding-top: 2rem;
+        width: 60%;
+    }
+    .LastPage div:nth-child(1) h1{
+        font-size: 1.8rem;
+    }
+    .LastPage div:nth-child(1) p{
+        font-size: 1rem;
+    }
+    .LastPage div:nth-child(1) button{
+        font-size: 1.1rem;
+    }
+    .LastPage div:nth-child(2){
+        width: 100%;
+        height: 400px;
+    }
+}
+@media (width <= 980px) {
+    .LastPage{
+        padding: 3.5rem 2rem;
+    }
+    .LastPage div:nth-child(1){
+        width: 50%;
+    }.LastPage div:nth-child(1) h1{
+        font-size: 1.6rem;
+    }
+    .LastPage div:nth-child(1) p{
+        font-size: 0.85rem;
+    }
+}
+@media (width <= 800px) {
+    .LastPage div:nth-child(1) h1{
+        font-size: 1.4rem;
+    }
+    .LastPage div:nth-child(1) p{
+        font-size: 0.7rem;
+    }
+    .LastPage div:nth-child(1) button{
+        font-size: 1rem;
+    }
+}
+
+@media (width <= 750px){
+    .LastPage{
+        gap: 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3.5rem 1rem;
+        padding-bottom: 8rem;
+        flex-direction: column-reverse;
+    }
+    .LastPage div:nth-child(1){
+        width: 100%;
+        padding: 0rem;
+        height: 220px;
+    }
+    .LastPage div:nth-child(1) h1{
+        font-size: 1.7rem;
+    }
+    .LastPage div:nth-child(1) p{
+        font-size: .9rem;
+    }
+    .LastPage div:nth-child(2){
+        /* padding-bottom: 2rem; */
+        height: 280px;
+        margin-bottom: 3rem;
+
+    }
+}

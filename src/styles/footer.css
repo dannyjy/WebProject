@@ -1,89 +1,84 @@
 .footer {
-    color: #fff; 
-    padding: 50px 0;
-    justify-content: center;
-    background-color: #00796a; 
-  }
-  
-  .footer-container {
+  display: flex;
+  padding: 3rem;
+  padding-top: 4rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe5e9;
+}
+.footer-container {
+    gap: 3rem;
     display: flex;
-    margin: 0 auto;
-    max-width: 1200px; 
-    align-items: flex-start; 
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  
   .footer-section {
-    flex: 1;
-    margin: 0 20px;
+    flex-grow: 1;
+     margin-right: 2.5rem;
   }
-  
   .footer-section h4 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
   }
-  
   .footer-section ul {
-      margin: 0;
-      padding: 0;
       list-style: none;
   }
-  
   .footer-section li {
+    font-size: 1.1rem;
     margin-bottom: 10px;
   }
-  
-  
-  .subscribe-form {
-    display: flex;
-    align-items: center;
+  .subscribe-form{
+    padding-top: 2.5rem;
   }
-  .subscribe-to-our-Newsletter{
-    margin-right: 40px;
-    
-  }
-  
   .subscribe-form input {
-    flex: 1;
+    width: 15rem;
     border: none;
     padding: 10px;
     border-radius: 5px;
   }
   .subscribe-form button {
     border: none;
-    color: black; 
-    margin-top: 18%;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #0a2ac8;
+    background-color: #606caa;
   }
-  input{
-    margin-top: 18%;
+  .footer-section .DropIcons{
+    font-size: 1.5rem;
+    display: none;
   }
-  .footer {
-    color: #fff; 
-    padding: 50px 0;
-    text-align: center; 
-    background-color: #00796a; 
-}
-.dev h4{
-  margin-right: 50px;
- 
-}
-
-.footer-container {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1200px; 
-    align-items: center;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) { 
-    .footer-container {
-        flex-direction: row;  
+  @media (width <= 500px) {
+    .footer {
+        padding: 2.5rem 1rem;
+        padding-top: 3.5rem;
+      }
+      .footer-container {
+        gap: 1rem;
+      }
+      .listFlex{
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-    }
-}
-
+      }
+      .MainDroplist{
+        display: none;
+      }
+      .Droplist{
+        padding-left: 2.5rem;
+      }
+      .footer-section {
+        width: 100%;
+        margin-right: 0rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px thick #000000;
+      }
+      .footer-section h4 {
+        font-size: 1.5rem;
+      }
+      .footer-section li {
+        font-size: 1.2rem;
+      }
+      .footer-section .DropIcons{
+        display: block;
+      }
+      
+  }

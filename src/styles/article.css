@@ -1,0 +1,95 @@
+.ArticleContainer{
+    padding: 3rem 3rem;
+    background: #ffe5e9;
+}
+.ArticleContainer h1{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.ArticleContainer p{
+    display: flex;
+    padding: 0rem 10rem;
+    padding-bottom: 2.5rem;
+    justify-content: center;
+}
+.Card3Holder{
+    display: grid;
+    overflow-x: auto;
+    place-items: center; 
+    scrollbar-width: none;
+}
+.Card3Holder .childHolder{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Card3{
+    width: 600px;
+    background: #fff;
+    border-radius: .5rem;
+    padding: 1.5rem 1rem 1.2rem 2rem;
+}
+.Card3 div:nth-child(1){
+    color: #ffd700;
+    padding-bottom: 1rem;
+}
+.Card3 div:nth-child(1){
+    width: 300px;
+}
+.Card3 div:nth-child(3){
+    gap: 1rem;
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+}
+.Card3 div:nth-child(3) div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+@media (width <= 900px){
+    .ArticleContainer p{
+        padding: 0rem 3.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+@media (width <= 750px) {
+    .ArticleContainer{
+        padding: 3rem 1rem;
+    }
+    .ArticleContainer div:nth-child(1) h1{
+        font-size: 1.3rem;
+        padding-bottom: 1.2rem;
+    }
+    .ArticleContainer div:nth-child(2) p{
+        padding: 0rem;
+        font-size: .9rem;
+        padding-bottom: 2rem;
+    }
+    .ArticleContainer div:nth-child(3){
+        flex-wrap: wrap;
+    }
+    .Card3{
+        width: 100%;
+    }
+    .Card3 div:nth-child(2){
+        font-size: .8rem;
+    }
+    .Card3 div:nth-child(3){
+        gap: 1rem;
+        display: flex;
+        padding-top: 1rem;
+        align-items: center;
+    }
+    .Card3 div:nth-child(3) div{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+}

@@ -1,0 +1,121 @@
+:root{
+    --Desgin-radius:.8rem;
+    --Cash-color: #a78f08;
+    --Desgin-bg:#ffe5e9;
+}
+.Card2{
+    gap: 1.5rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 1rem;
+}
+.Card2 .Image-Section{
+    width: 700px;
+    position: relative;
+    border-radius: var(--Desgin-radius);
+}
+.Image-Section section{
+    width: 600px;
+    display: grid;
+    place-items: center;
+    background-color: #e3e3e3;
+    border-radius: var(--Desgin-radius);
+}
+.Image-Section section img{
+    width: 320px;
+}
+.Image-Section .Floating-Card{
+    top: 100px;
+    right: 0px;
+    width: 260px;
+    height: 230px;
+    padding: 1rem;
+    position: absolute;
+    background: var(--Desgin-bg);
+    border-radius: .5rem;
+}
+.Image-Section .Floating-Card div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    background-size: cover;
+    background-position: center;
+}
+.Image-Section .Floating-Card h3{
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+.Text-Section{
+    width: 35%;
+    height: 100%;
+    padding: 1.2rem 0rem;
+}
+.Text-Section h1{
+    font-size: 2.2rem;
+}
+.Text-Section p{
+    padding: 2.2rem 0rem;
+}
+.Text-Section button{
+    border: none;
+    font-size: 1.2rem;
+    padding: .8rem 1.3rem;
+    background: #cfa1a8;
+    border-radius: .5rem;
+}
+@media (width <= 1000px) {
+    
+    .Image-Section section{
+        width: 100%;
+        padding-bottom: 0rem;
+    }
+    .Image-Section section img{
+        width: 280px;
+    }
+    .Image-Section .Floating-Card{
+        width: 200px;
+        height: 200px;
+        padding: .9rem;
+    }
+    .Image-Section .Floating-Card div{
+        width: 40px;
+        height: 40px;
+    }
+    .Image-Section .Floating-Card h3{
+        font-size: 1.2rem;
+    }
+    .Image-Section .Floating-Card p{
+        font-size: .8rem;
+    }
+    .Text-Section{
+        width: 50%;
+    }
+    .Text-Section h1{
+        font-size: 1.9rem;
+    }
+    .Text-Section p{
+        font-size: .9rem;
+        padding: 2.2rem 0rem;
+    }
+}
+
+@media (width <= 750px) {
+    .Card2{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4rem 0rem;
+    }
+    .Image-Section section{
+        width: 100%;
+        padding-bottom: 0rem;
+    }
+    .Image-Section section img{
+        width: 230px;
+    }
+    .Text-Section{
+        width: 100%;
+    }
+}

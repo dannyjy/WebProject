@@ -2,4 +2,129 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --Desgin-radius:.8rem;
+    --Cash-color: #a78f08;
+    --Desgin-bg:#ffe5e9;
+}
+.MainContainer{
+    padding: 2rem 2rem ;
+    background: #fff;
+}
+
+.MainContainer aside .handing{
+    text-align: center;
+}
+.handing h1{
+    font-size: 2rem;
+}
+.MainContainer aside .handing .moreIcon{
+    display: none;
+}
+.MainContainer aside .links{
+    gap: 5rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MainContainer aside .links li{
+    font-weight: 5rem;
+    list-style: none;
+    font-size: 1.2rem;
+    padding-bottom: .2rem;
+}.MainContainer aside .links li:hover{
+    border-bottom: 2px solid #008000b4;
+}
+
+.cardsContainer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.cardsContainer .CardsList{
+    gap: 1rem;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.cardsContainer .scrollArrow{
+    top: 50%;
+    width: 50px;
+    border: none;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.5rem;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center ;
+    background: #ffe5e9;
+    transform: translateY(-50%);
+}
+.cardsContainer .left{
+    text-align: center;
+    left: 0px;
+}
+.cardsContainer .right{
+    text-align: center;
+    right: 0px;
+}
+@media (width <= 900px) {
+    .cardsContainer .scrollArrow{
+        display: none;
+    }
+}
+
+@media ( width <= 750px ) {
+    .MainContainer{
+        padding: 2rem 1rem;
+    }
+    .MainContainer aside{
+        position: relative;
+    }
+    .MainContainer aside .handing .moreIcon{
+        display: block;
+    }
+    .MainContainer aside .handing{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        justify-content: space-between;
+    }
+    .handing h1{
+        font-size: 1.5rem;
+    }
+    .MainContainer aside .links{
+        display: none;
+    }
+    .MainContainer aside .linksDrop{
+        top: 30px;
+        right: 0px;
+        z-index: 1;
+        width: 210px;
+        height: 205px;
+        display: block;
+        overflow: hidden;
+        border-radius: 5px;
+        background: #fff;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #ffe5e9;
+    }
+    .MainContainer aside .linksDrop li{
+        text-align: center;
+        padding: .9rem 1.4rem;
+    }
+    .MainContainer aside .linksDrop li:hover{
+        border-bottom: #a78f08;
+    }
+    .cardsContainer .scrollArrow{
+        display: none;
+    }
 }
